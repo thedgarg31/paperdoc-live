@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // SPA fallback for hosts that don't rewrite unknown paths to index.html
+      sessionStorage.setItem("paperdoc-redirect", location.pathname + location.search + location.hash);
+      location.replace("/");
+    </script>
+    <title>PaperDoc</title>
+  </head>
+  <body></body>
+</html>
